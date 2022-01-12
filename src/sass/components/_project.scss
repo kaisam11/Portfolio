@@ -1,0 +1,182 @@
+.project {
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        span {
+            margin: 0 5rem;
+        }
+
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 25rem;
+        margin-bottom: 30rem;
+
+        @media (max-width: 1200px) {
+            margin-top: 20rem;
+        }
+
+        & > * {
+            position: relative;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5.5rem 0;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -8rem;
+                height: .5px;
+                width: 100%;
+                background: $secondary;
+                opacity: .5;
+            }
+
+            &:first-of-type::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -2.5rem;
+                height: .5px;
+                width: 100%;
+                background: $secondary; 
+                opacity: .5;  
+            }
+
+            @media (max-width: 1200px) {
+                flex-direction: column-reverse;
+                margin: 10rem 0;
+
+                &:after {
+                    bottom: -12rem;
+                }
+
+                &:first-of-type::before {
+                    top: -5rem
+                }
+            }
+        }
+
+
+        .title {
+
+            width: 50rem;
+            z-index: 10;
+
+            @media (max-width: 1200px) {
+                width: inherit;
+            }
+
+            &__main {
+
+                h3 {
+                    line-height: .9;
+    
+                    &:first-of-type {
+                        opacity: .5;
+                        margin-bottom: 3rem;
+                    }
+    
+                    @media (max-width: 600px){
+                        font-size: 8rem;
+                    }
+                }
+
+                @media (max-width: 1200px) {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10rem;
+                    
+                    h3 {
+                        margin: 0 2rem;
+                    }
+                }
+            }
+
+            p {
+                font-size: 2.5rem;
+                margin-top: 7rem;
+                font-family: $ff2;
+
+                @media (max-width: 1200px) {
+                    margin-top: 3rem;
+                    font-size: 3.2rem;
+                    text-align: center;
+                }
+            }
+
+            .index {
+                display: flex;
+
+                @media (max-width: 600px) {
+                    flex-direction: row-reverse;
+                    margin: 1rem 0 3rem;
+                }
+
+                p {
+                    font-size: 3rem; 
+                    margin-left: 3rem;
+
+                    @media (max-width: 600px) {
+                        margin-left: 0;
+                        margin-right: 3rem;
+                        font-size: 5rem;
+                    }
+
+                    &:last-of-type {
+                        height: 3.5rem;
+                        width: 3.5rem;
+                        border: 1px solid $secondary;
+                        border-radius: 100%;
+                        text-align: center;
+
+                        @media (max-width: 600px) {
+                            height: 6rem;
+                            width: 6rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .wrapper {
+            position: relative;
+            margin-top: 5rem;
+            height: 52rem;
+            width: 94rem;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 50px 100px;
+
+            &::after {
+                content: '2022';
+                position: absolute;
+                right: -7rem;
+                color: $secondary;
+                bottom: 2rem;
+                font-size: 3.5rem;
+                font-family: $ff2;
+                transform: rotate(90deg);
+
+                @media (max-width: 1200px){
+                    right: -6rem;
+                }
+            }
+
+            canvas {
+                height: 52rem !important;
+                width: 94rem !important;
+            }
+            
+        }
+
+
+    }
+}

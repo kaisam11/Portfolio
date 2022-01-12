@@ -1,0 +1,261 @@
+@import "./variable";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/project";
+@import "./components/contact";
+@import "./components/loading";
+@import "./components/menu";
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+
+  @media (max-width: 1800px) {
+    font-size: 8.5px;
+  }
+
+  @media (max-width: 1600px) {
+    font-size: 7.5px;
+  }
+
+  @media (max-width: 1450px) {
+    font-size: 7px;
+  }
+
+  @media (max-width: 1300px) {
+    font-size: 6.5px;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 5px;
+  }
+
+  @media (max-width: 750px) {
+    font-size: 4px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 3.7px;
+  }
+}
+
+body {
+  font-family: $ff1;
+  background-color: $primary;
+  color: $secondary;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: $secondary;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: $secondary;
+}
+
+h1, h2 {
+  -webkit-text-stroke: .2px $secondary;
+}
+
+h1 {
+  font-size: 25rem;
+  font-weight: 400;
+  line-height: 0.9;
+  text-transform: capitalize;
+
+  @media (max-width: 750px) {
+    font-size: 20rem
+  }
+}
+
+h3 {
+  font-size: 10rem;
+  font-family: $ff4;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary;
+}
+
+p, a {
+  font-family: $ff2;
+}
+
+.App {
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 4rem 15rem;
+
+  @media (max-width: 900px) {
+    padding: 5rem 10rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 5rem;
+  }
+}
+
+.maxwidth {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .arrow {
+    height: 6rem;
+    width: 6rem;
+    border: 1px solid $secondary;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 1.5rem;
+
+    svg {
+      position: absolute;
+      left: -50%;
+      top: 0;
+      height: 6rem;
+      width: 7rem;
+      object-fit: contain;
+      transition: all 0.3s ease-in-out;
+
+      path {
+        fill: $secondary;
+      }
+    }
+
+    @media (max-width: 600px) {
+      height: 8rem;
+      width: 8rem;
+
+      svg {
+        width: 9rem;
+        height: 8rem;
+      }
+    }
+
+  }
+
+  a {
+    color: $secondary;
+    font-family: $ff3;
+    font-size: 4.5rem;
+    transition: all 0.3s ease-in-out;
+
+    @media (max-width: 600px) {
+      font-size: 6rem;
+    }
+  }
+
+  &:hover {
+    a {
+      transform: scale(1.05);
+    }
+
+    .arrow {
+
+      svg {
+        transform: translateX(1rem);
+      }
+    }
+  }
+}
+
+.cursor, .cursor2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 300;
+  mix-blend-mode: exclusion;
+}
+
+.cursor {
+  width: 32px;
+  height: 32px;
+  background: #f9f5ef;
+  transition: all 0.1s ease-in-out;
+  transition-property: width, height, border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  svg {
+    transform: rotate(-90deg);
+    height: 80px;
+    width: 80px;
+    opacity: 0;
+    mix-blend-mode: exclusion;
+
+    path {
+      fill: #f9f5ef;
+    }
+  }
+}
+
+.hovered {
+  width: 60px;
+  height: 60px;
+}
+
+.projectHovered {
+  width: 100px;
+  height: 100px;
+
+  svg {
+    opacity: 1;
+  }
+}
+
+.cursor2 {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $secondary;
+  transition: all 0.2s ease-in-out;
+  transition-property: width, height, border;
+  mix-blend-mode: exclusion;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.hovered2 {
+  opacity: 0;
+}

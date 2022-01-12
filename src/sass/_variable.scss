@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Walkway_SemiBold;
+  src: url(../fonts/Walkway_SemiBold.woff2);
+}
+
+@font-face {
+  font-family: Walkway_Bold;
+  src: url(../fonts/Walkway_Bold.woff2);
+}
+
+@font-face {
+  font-family: Brigilla;
+  src: url(../fonts/Bigilla.woff2);
+}
+
+@font-face {
+  font-family: Brigilla_Bold;
+  src: url(../fonts/Bigilla-Bold.woff2);
+}
+
+
+:root {
+    --primary: #161616;
+    --secondary: #f9f5ef ;
+  }
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$ff1: 'Brigilla', 'san-serif';
+$ff2: 'Walkway_SemiBold', serif;
+$ff3: 'Walkway_Bold', serif;
+$ff4: 'Brigilla_Bold', serif;

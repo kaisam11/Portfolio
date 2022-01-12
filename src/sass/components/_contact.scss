@@ -1,0 +1,160 @@
+.footer {
+
+    h2 {
+        margin-bottom: 15rem;
+        font-size: 20rem;
+        font-weight: 100;
+
+        @media (max-width: 900px) {
+            text-align: center;
+        } 
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        @media (max-width: 900px) {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .top {
+            font-size: 3.5rem;
+            font-family: $ff2;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 600px) {
+                font-size: 5rem;
+            }
+
+            svg {
+                margin-left: 1rem;
+                height: 3rem;
+                width: 3rem;
+                opacity: .65;
+                
+                path {
+                    fill: $secondary;
+                }
+
+                @media (max-width: 600px) {
+                    height: 5rem;
+                    width: 5rem;
+                }
+            }
+
+            &:hover {
+                svg {
+                    animation: scrollUp 1.3s  infinite;
+                }
+            }
+        }
+
+        .social {
+            text-align: right;
+
+            @media (max-width: 900px) {
+                margin-top: 10rem;
+            }
+
+            @media (max-width: 600px) {
+                margin-top: 20rem;
+            }
+
+            .email {
+                font-size: 7rem;
+                font-family: $ff2;
+                position: relative;
+
+                @media (max-width: 600px){
+                    font-size: 8rem;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2.5rem;
+                    width: 100%;
+                    height: 1px;
+                    background: $secondary;
+                }
+            }
+
+            &__icons {
+                margin-top: 7.2rem;
+
+                @media (max-width: 900px) {
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+
+                @media (max-width: 600px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                a {
+                    font-size: 3rem;
+                    margin-left: 9rem;
+                    position: relative;
+
+                    @media (max-width: 900px) {
+                        margin-left: 0;
+                    }
+
+                    @media (max-width: 600px) {
+                        font-size: 5rem;
+                        margin: 5rem;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -1px;
+                        width: 0;
+                        height: 1px;
+                        background: $secondary;
+                        transition: all .2s linear;
+                    }
+    
+                    &:hover {
+    
+                        &::after{
+                        width: 100%;
+                    }
+                }
+                }
+            }
+        }
+    }
+
+    p {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        margin: 15rem 0 10rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@keyframes scrollUp {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+}
