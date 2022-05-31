@@ -1,7 +1,5 @@
-import niceBeauty from '../images/NiceBeauty.webp'
-import niceBeauty2 from '../images/NiceBeauty2.webp'
-import tokyoChronos from '../images/TokyoChronos.webp'
-import tokyoChronos2 from '../images/TokoyChronos2.webp'
+import divertical from '../images/Divertical.webp'
+import divertical2 from '../images/Divertical2.webp'
 import foodDeliveryApp from '../images/FoodDeliveryApp.webp'
 import foodDeliveryApp2 from '../images/FoodDeliveryApp2.webp'
 import efa from '../images/EFA.webp'
@@ -25,39 +23,29 @@ export const projects = [
     },
     {
         id: 2,
+        img: divertical,
+        title: 'Divertical Website',
+        img2: divertical2,
+        distort: two,
+        type: 'UX UI Design',
+        link: 'https://www.behance.net/gallery/144556863/UX-UI-Design-Divertical'
+    },
+    {
+        id: 3,
         img: efa,
         title: 'Football Association',
         img2: efa2,
-        distort: two,
+        distort: three,
         type: 'Web Design',
         link: 'https://www.behance.net/gallery/120495377/European-Football-Association-Webdesign-Concept'
     },
     {
-        id: 3,
+        id: 4,
         img: caffe,
         title: 'Caffe Coffee',
         img2: caffe2,
-        distort: three,
+        distort: four,
         type: 'Web Design',
         link: 'https://www.behance.net/gallery/119902369/Caffe-Web-Design'
     },
-    {
-        id: 4,
-        title: 'Nice Beauty Fashion',
-        img: niceBeauty,
-        img2: niceBeauty2,
-        distort: four,
-        type: 'Frontend Web Development',
-        link: 'https://github.com/kaisam11/Nice-Beauty',
-    },
-    {
-        id: 5,
-        title: 'Tokyo Chronos',
-        img: tokyoChronos,
-        img2: tokyoChronos2,
-        distort: one,
-        type: 'Frontend Web Development + Design',
-        link: 'https://github.com/kaisam11/Tokyo-Chronos'
-    },
-
 ]
