@@ -29,7 +29,7 @@ const About = ({ onCursor }) => {
     })
 
     React.useEffect(() => {
-        
+
         inView && animation.start('visible')
         inView2 && animation.start('visible2')
 
@@ -60,14 +60,14 @@ const About = ({ onCursor }) => {
                             }}
                         >
                             <p>My name is Hrithik Sinha (AKA Kaisam). I am a novice front end developer and designer based in India.
-                            Aesthetic looking websites with good user experience is what I
-                            yearn to design and develop.  I have always been passionate
-                            about visual designs and would love to design a website that is awwwards.com worthy.
+                                Aesthetic looking websites with good user experience is what I
+                                yearn to design and develop.  I have always been passionate
+                                about visual designs and would love to design a website that is awwwards.com worthy.
                             </p>
 
                             <p className="interest">
-                                My interests? I have been an Anime fan ever since I was a kid. 
-                                I love to binge-watch Netflix series at times. 
+                                My interests? I have been an Anime fan ever since I was a kid.
+                                I love to binge-watch Netflix series at times.
                                 I am also a football fan, Hala Madrid!
                             </p>
 
@@ -101,8 +101,7 @@ const About = ({ onCursor }) => {
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>React js</li>
+                        <li>SASS</li>
                         <li>Figma</li>
                     </ul>
                 </motion.div>
