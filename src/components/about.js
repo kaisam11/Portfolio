@@ -59,16 +59,19 @@ const About = ({ onCursor }) => {
                                 }
                             }}
                         >
-                            <p>My name is Hrithik Sinha (AKA Kaisam). I am a novice front end developer and designer based in India.
-                                Aesthetic looking websites with good user experience is what I
-                                yearn to design and develop.  I have always been passionate
-                                about visual designs and would love to design a website that is awwwards.com worthy.
+                            <p>My name is Hrithik Sinha (AKA Kaisam). I am a UX Designer based in India.
+                                Aesthetic looking websites and apps with good user experience is what I
+                                yearn to design and develop. I have always been passionate about visual designs
+                                which is why I love designing. I started off as a Frontend Developer but changed
+                                to UX Designer when I found out I spent most of my time trying to make the website
+                                look better and eye pleasing during the development phase.
                             </p>
 
                             <p className="interest">
-                                My interests? I have been an Anime fan ever since I was a kid.
-                                I love to binge-watch Netflix series at times.
-                                I am also a football fan, Hala Madrid!
+                                Apart from designing websites
+                                and apps, I spend my time watching TV Series on OTT Platforms.
+                                I also love watching football especially my favorite club
+                                i.e Real Madrid. Sometimes I play games on my pc or mobile as well.
                             </p>
 
                             <button className="btn" onMouseLeave={onCursor} onMouseEnter={() => onCursor("hovered")}>
@@ -99,10 +102,11 @@ const About = ({ onCursor }) => {
                     className="tech-stack container">
                     <h3>tech - stack</h3>
                     <ul>
+                        <li>Figma</li>
+                        <li>Photoshop</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>SASS</li>
-                        <li>Figma</li>
                     </ul>
                 </motion.div>
             </section>

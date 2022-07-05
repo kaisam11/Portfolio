@@ -47,7 +47,7 @@ const line = {
     },
     animate: {
         width: window.innerWidth,
-        transition: {...transition, duration: 2.1, delay: 2.1}
+        transition: {...transition, duration: 1.7, delay: 1.7}
     }
 }
 

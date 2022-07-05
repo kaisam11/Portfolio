@@ -49,7 +49,7 @@ const Hero = ({ onCursor, setToggleMenu }) => {
                         </motion.h1>
                         <motion.h4
                             initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: .8, transition: transition }}
-                        >Front-end developer<br />& UX / UI designer</motion.h4>
+                        >Front-end developer<br />& UX designer</motion.h4>
                     </div>
 
                     <motion.div className="banner__lower"
