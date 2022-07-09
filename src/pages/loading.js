@@ -41,15 +41,15 @@ const letter = {
     }
 }
 
-const line = {
-    initial: {
-        width: 0,
-    },
-    animate: {
-        width: window.innerWidth,
-        transition: {...transition, duration: 1.7, delay: 1.7}
-    }
-}
+// const line = {
+//     initial: {
+//         width: 0,
+//     },
+//     animate: {
+//         width: window.innerWidth,
+//         transition: {...transition, duration: 1.7, delay: 1.7}
+//     }
+// }
 
 const Loading = ({ loading }) => {
 
@@ -67,7 +67,7 @@ const Loading = ({ loading }) => {
                         <motion.span variants={letter}>a</motion.span>
                         <motion.span variants={letter}>m</motion.span>
                     </motion.span>
-                    <motion.span className="line" variants={line} initial='initial' animate='animate'></motion.span>
+                    {/* <motion.span className="line" variants={line} initial='initial' animate='animate'></motion.span> */}
                     <motion.span variants={lastName} initial='initial' animate='animate' className='last'>
                         <motion.span variants={letter}>P</motion.span>
                         <motion.span variants={letter}>a</motion.span>
