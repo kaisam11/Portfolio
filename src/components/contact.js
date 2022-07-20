@@ -17,7 +17,7 @@ const Contact = ({ onCursor }) => {
                             className="email" href="mailto:hrithiksinha17@gmail.com">hrithiksinha17@gmail.com</a>
                         <div className="social__icons">
                             <a onMouseLeave={onCursor} onMouseEnter={() => onCursor("hovered")} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hrithik-sinha-b45107173/">linkedin</a>
-                            <a onMouseLeave={onCursor} onMouseEnter={() => onCursor("hovered")} target="_blank" rel="noopener noreferrer" href="https://github.com/kaisam11">github</a>
+                            <a onMouseLeave={onCursor} onMouseEnter={() => onCursor("hovered")} target="_blank" rel="noopener noreferrer" href="https://dribbble.com/Kaisam">dribbble</a>
                             <a onMouseLeave={onCursor} onMouseEnter={() => onCursor("hovered")} target="_blank" rel="noopener noreferrer" href="https://www.behance.net/hrithiksinha">behance</a>
                         </div>
                     </div>

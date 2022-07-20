@@ -43,13 +43,13 @@ const Hero = ({ onCursor, setToggleMenu }) => {
 
                     <div className="banner__upper">
                         <motion.h1
-                            initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1, transition: transition }}
+                            className="first" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1, transition: transition }}
                         >
                             Hrithik Sinha
                         </motion.h1>
-                        <motion.h4
-                            initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: .8, transition: transition }}
-                        >Front-end developer<br />& UX designer</motion.h4>
+                        <motion.h1
+                            className="second" initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1, transition: transition }}
+                        >UX designer</motion.h1>
                     </div>
 
                     <motion.div className="banner__lower"

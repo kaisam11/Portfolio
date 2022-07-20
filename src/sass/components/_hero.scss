@@ -4,6 +4,19 @@
     flex-direction: column;
     justify-content: space-between;
 
+    &::after {
+        content: '';
+        position: absolute;
+        width: 50vh;
+        height: 50vh;
+        background: url(../../images/Circle_BG.webp);
+        bottom: 25vh;
+        align-self: center;
+        border-radius: 50vh;
+        filter: blur(60px);
+        background-size: cover
+    }
+
     h1, h4, h5 {
         text-transform: uppercase;
     }
@@ -102,18 +115,51 @@
         &__upper {
 
             line-height: .9;
+            padding: 0 15rem;
+
+            @media (max-width: 900px) {
+                padding: 0 10rem;
+            }
+
+            @media (max-width: 600px) {
+                padding: 0 3rem;
+            }
 
             h1 {
                 font-size: 25rem;
                 margin-bottom: 2rem;
+                position: relative;
+                z-index: 10;
+                mix-blend-mode: exclusion;
+
+                @media (max-width: 600px) {
+                    margin-bottom: 10rem;
+                }
             }
 
-            h4 {
-                font-size: 8rem;
-                font-family: $ff2;
-                font-weight: 100;
-                text-align: center;
-            }  
+            .first {
+                text-align: left;
+
+                @media (max-width: 600px) {
+                    text-align: center;
+                }
+                
+            }
+
+            .second {
+                text-align: right;
+
+                @media (max-width: 600px) {
+                    text-align: center;
+                }
+            }
+
+            // h4 {
+            //     font-size: 8rem;
+            //     font-family: $ff2;
+            //     font-weight: 100;
+            //     text-align: center;
+            // }  
     
             }
 
