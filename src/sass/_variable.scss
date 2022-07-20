@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: Walkway_Black;
+  src: url(../fonts/Walkway_Black.woff2);
+}
+
+@font-face {
   font-family: Brigilla;
   src: url(../fonts/Bigilla.woff2);
 }
@@ -26,7 +31,8 @@
 
 $primary: var(--primary);
 $secondary: var(--secondary);
-$ff1: 'Brigilla', 'san-serif';
+$ff1: 'Brigilla';
 $ff2: 'Walkway_SemiBold', serif;
 $ff3: 'Walkway_Bold', serif;
-$ff4: 'Brigilla_Bold', serif;
+$ff4: 'Walkway_Black', serif;
+$ff5: 'Brigilla_Bold';

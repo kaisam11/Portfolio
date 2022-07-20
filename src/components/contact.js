@@ -5,7 +5,8 @@ const Contact = ({ onCursor }) => {
     return (
         <>
             <footer className="footer container maxwidth">
-                <h2 id="contact">Get in touch</h2>
+                <h1>Get </h1>
+                <h1 className="footer__second">in touch</h1>
                 <div className="footer__inner">
                     <a className="top" href="#hero"
                         onMouseLeave={onCursor} onMouseEnter={() => onCursor("hovered")}

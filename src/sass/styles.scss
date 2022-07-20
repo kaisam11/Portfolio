@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  font-family: $ff1;
+  font-family: $ff2;
   background-color: $primary;
   color: $secondary;
   -webkit-font-smoothing: antialiased;
@@ -75,23 +75,24 @@ body {
 }
 
 h1, h2 {
-  -webkit-text-stroke: .2px $secondary;
+  font-family: $ff4;
+  letter-spacing: 2px;
 }
 
 h1 {
-  font-size: 25rem;
+  font-size: 20rem;
   font-weight: 400;
   line-height: 0.9;
-  text-transform: capitalize;
+  text-transform: uppercase;
 
-  @media (max-width: 750px) {
-    font-size: 20rem
+  @media (max-width: 600px) {
+    font-size: 15rem;
   }
 }
 
 h3 {
   font-size: 10rem;
-  font-family: $ff4;
+  font-family: $ff5;
 }
 
 a {

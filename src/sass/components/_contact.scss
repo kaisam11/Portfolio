@@ -1,13 +1,12 @@
 .footer {
 
-    h2 {
-        margin-bottom: 15rem;
-        font-size: 20rem;
-        font-weight: 100;
+    h1 {
+        text-align: center; 
+    }
 
-        @media (max-width: 900px) {
-            text-align: center;
-        } 
+    &__second {
+        font-family: $ff5;
+        margin-bottom: 15rem
     }
 
     &__inner {
@@ -17,7 +16,7 @@
 
         @media (max-width: 900px) {
             align-items: center;
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
 
         .top {
@@ -28,6 +27,10 @@
 
             @media (max-width: 600px) {
                 font-size: 5rem;
+            }
+
+            @media (max-width: 900px) {
+                margin-top: 15rem;
             }
 
             svg {
@@ -56,13 +59,13 @@
         .social {
             text-align: right;
 
-            @media (max-width: 900px) {
-                margin-top: 10rem;
-            }
+            // @media (max-width: 900px) {
+            //     margin-top: 10rem;
+            // }
 
-            @media (max-width: 600px) {
-                margin-top: 20rem;
-            }
+            // @media (max-width: 600px) {
+            //     margin-top: 20rem;
+            // }
 
             .email {
                 font-size: 7rem;

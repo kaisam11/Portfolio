@@ -6,7 +6,7 @@
 
         @media (max-width: 600px) {
             font-size: 4rem;
-            line-height: 1.3;
+            line-height: 1.5;
         }
     }
 
@@ -17,11 +17,37 @@
         padding-top: 50rem;
 
         .me {
+            position: relative;
             height: 75rem;
             width: 50rem;
             margin-bottom: -40rem;
-            object-fit: cover;
-            opacity: .9;
+
+            &::after {
+                content: "";
+                position: absolute;
+                opacity: .5;
+                width: 100%;
+                height: 100%;
+                top: -2.5rem;
+                left: -2.5rem;
+                border: .5px solid $secondary;
+                border-radius: 75rem 75rem 0 0;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border-radius: 75rem 75rem 0 0;
+                background-image: url(../../images/Kaisam.webp);
+                background-size: cover;
+                background-position: center;
+                filter: brightness(0.8);
+                z-index: 10;
+            }
         }
 
         .text {
@@ -30,6 +56,10 @@
             align-items: center;
             justify-content: center;
             z-index: 10;
+
+            &__second {
+                font-family: $ff5;
+            }
 
             &__inner {
                 margin-top: 15rem;

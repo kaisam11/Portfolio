@@ -13,8 +13,12 @@
         bottom: 25vh;
         align-self: center;
         border-radius: 50vh;
-        filter: blur(60px);
-        background-size: cover
+        background-size: cover;
+        filter: brightness(0.8);
+
+        @media (max-width: 600px) {
+            width: 30vh;
+        }
     }
 
     h1, h4, h5 {
@@ -39,7 +43,7 @@
         }
 
         h5 {
-            font-family: $ff2;
+            font-family: $ff4;
             font-weight: 400;
             font-size: 3rem;
             letter-spacing: 1.5px;
@@ -63,6 +67,7 @@
                 a {
                     text-decoration: none;
                     font-size: 2.5rem;
+                    text-transform: uppercase;
                     
                     &:hover {
                         text-decoration: line-through;
@@ -126,11 +131,10 @@
             }
 
             h1 {
-                font-size: 25rem;
+                font-size: 24rem;
                 margin-bottom: 2rem;
                 position: relative;
                 z-index: 10;
-                mix-blend-mode: exclusion;
 
                 @media (max-width: 600px) {
                     margin-bottom: 10rem;
@@ -143,6 +147,7 @@
 
             .second {
                 text-align: right;
+                font-family: $ff5;
 
                 @media (max-width: 600px) {
                     text-align: left;

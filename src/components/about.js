@@ -6,7 +6,6 @@ import {
     useAnimation,
 } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import kaisam from '../images/Kaisam.webp'
 import { ReactComponent as Arrow1 } from '../images/Arrow 1.svg'
 import resume from '../images/HrithikSinhaCV.pdf'
 
@@ -40,9 +39,10 @@ const About = ({ onCursor }) => {
         <>
             <section className="about maxwidth">
                 <div id="about" className="about__main">
-                    <motion.img className="me" src={kaisam} alt="kaisam" style={{ y: y1 }} />
+                    <motion.div className="me" alt="kaisam" style={{ y: y1 }} />
                     <div className="text">
-                        <h1>about me</h1>
+                        <h1>Passionate</h1>
+                        <h1 className="text__second">Designer</h1>
                         <motion.div className="text__inner"
                             ref={ref}
                             animate={animation}
