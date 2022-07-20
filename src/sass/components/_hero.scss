@@ -139,18 +139,13 @@
 
             .first {
                 text-align: left;
-
-                @media (max-width: 600px) {
-                    text-align: center;
-                }
-                
             }
 
             .second {
                 text-align: right;
 
                 @media (max-width: 600px) {
-                    text-align: center;
+                    text-align: left;
                 }
             }
 
