@@ -4,7 +4,7 @@ import { ReactComponent as Up } from '../images/up.svg'
 const Contact = ({ onCursor }) => {
     return (
         <>
-            <footer className="footer container maxwidth">
+            <footer id="contact" className="footer container maxwidth">
                 <h1>Get </h1>
                 <h1 className="footer__second">in touch</h1>
                 <div className="footer__inner">

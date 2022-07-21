@@ -20,6 +20,7 @@ const Hero = ({ onCursor, setToggleMenu }) => {
     return (
         <>
             <motion.header className="header maxwidth" initial='initial' animate='animate' exit='exit'>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: transition }} className="circle"></motion.div>
                 <div className="container">
                     <motion.nav id="hero" className="nav"
                         initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, transition: { delay: 2.2, ...transition } }}>

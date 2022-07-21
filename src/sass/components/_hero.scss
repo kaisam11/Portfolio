@@ -4,8 +4,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    &::after {
-        content: '';
+    .circle {
         position: absolute;
         width: 50vh;
         height: 50vh;
@@ -132,7 +131,7 @@
 
             h1 {
                 font-size: 24rem;
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
                 position: relative;
                 z-index: 10;
 
