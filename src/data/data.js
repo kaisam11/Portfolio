@@ -16,21 +16,21 @@ import four from '../images/4.jpg'
 export const projects = [
     {
         id: 1,
-        img: foodDeliveryApp,
-        title: 'Food Delivery',
-        img2: foodDeliveryApp2,
-        distort: one,
-        type: 'UX UI Design',
-        link: 'https://www.behance.net/gallery/134438563/Food-Delivery-App-Design'
-    },
-    {
-        id: 2,
         img: amazon,
         title: 'Amazon App Redesign',
         img2: amazon2,
-        distort: two,
+        distort: one,
         type: 'UX UI Design',
         link: 'https://www.behance.net/gallery/146011057/Amazon-App-Redesign'
+    },
+    {
+        id: 2,
+        img: foodDeliveryApp,
+        title: 'Food Delivery',
+        img2: foodDeliveryApp2,
+        distort: two,
+        type: 'UX UI Design',
+        link: 'https://www.behance.net/gallery/134438563/Food-Delivery-App-Design'
     },
     {
         id: 3,
